@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; }
+.layout { display: flex; min-height: 100vh; }
+.layout.claro { --bg: #f5f6fa; --fg: #1d1d2b; --side: #20232a; }
+.layout.escuro { --bg: #15161c; --fg: #e8e8f0; --side: #0b0c10; }
+.sidebar { width: 260px; background: var(--side); color: #fff; padding: 1.5rem 1rem; }
+.brand { font-size: 1.3rem; font-weight: 700; }
+.sidebar p { opacity: .7; font-size: .85rem; }
+.sidebar nav { display: flex; flex-direction: column; gap: .25rem; }
+.sidebar a { color: #cfd3ff; text-decoration: none; padding: .5rem .75rem; border-radius: 6px; }
+.sidebar a:hover { background: #ffffff18; }
+.sidebar a.active { background: #61dafb; color: #111; font-weight: 600; }
+.content { flex: 1; padding: 2rem; background: var(--bg); color: var(--fg); }
+input { padding: .5rem; margin-right: .5rem; }
+button { padding: .5rem 1rem; margin-right: .25rem; cursor: pointer; }
+.big { font-size: 3rem; margin: .5rem 0; }
+.tarefas { list-style: none; padding: 0; }
+.tarefas li { display: flex; justify-content: space-between; max-width: 400px; padding: .4rem 0; }
+.cards { display: flex; gap: 1rem; flex-wrap: wrap; }
+.card { border: 1px solid #8884; border-radius: 8px; padding: 1rem 1.5rem; }
+.conceito { border-left: 4px solid #61dafb; background: #61dafb22; padding: .5rem 1rem; margin: 1rem 0; max-width: 640px; }
+.conceito p { margin: .3rem 0; }
+.resumo { border-collapse: collapse; }
+.resumo th, .resumo td { border: 1px solid #8886; padding: .5rem .75rem; text-align: left; }
